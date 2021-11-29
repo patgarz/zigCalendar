@@ -1,0 +1,50 @@
+h1, h2 {
+    text-align: center;
+}
+
+table {
+    margin: 10px auto;
+    border-collapse: collapse;
+    width: 10in;
+    table-layout: fixed;
+}
+
+.default {
+    /* Normal row height - 5 weeks */
+    height: 1in
+}
+
+.long {
+    /* Height of each row reduced to accommodate 6 lines per page */
+    height: 1in
+}
+
+.short {
+    /* Height of each row increased to accommodate 4 lines per page (February 1 on Sunday, no leap) */
+    height: 1in
+}
+
+td {
+    border: 1px solid black;
+    height: 1.4in;
+    vertical-align: top;
+    padding: .1in;
+}
+
+th {
+    text-transform: uppercase;
+    text-align: center;
+    border: none
+}
+
+.empty {
+    border: none;
+}
+
+.standard {
+    border: 1px solid black;
+}
+
+.important {
+    border: 4px solid black;
+}

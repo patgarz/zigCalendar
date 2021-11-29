@@ -1,0 +1,29 @@
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <h1>{{.Month}} {{.Year}}</h1>
+    <h2>{{.Title}}</h2>
+    <table class="{{.Length}}">
+        <tr>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+        {{ range .Weeks }}
+        <tr>
+            {{ range .Week }}
+            <td class={{.Class}}>
+                <div>{{.Day}}</div>
+                <div>{{.Text}}</div>
+            </td>
+            {{ end }}
+        </tr>
+        {{ end }}
+    </table>
+</body>
